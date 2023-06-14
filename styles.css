@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+img{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+}
+body {
+    margin-left: 12rem;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+section {
+    height: 100vh;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+/* LOGO */
+
+.logo {
+    position: fixed;
+    top: 1.7rem;
+    left: 4.3rem;
+    z-index: 1;
+    transition: 700ms;
+    border: 2px solid #F0A500;
+    border-radius: 4px;
+    padding:.3rem .7rem;
+}
+.logo h3{
+    font-size: 1.5rem;
+    color: white;
+}
+.logo:hover {
+    transition: 500ms;
+    transform: scale(1.2);
+    color: #F0A500;
+    border-color: #F0A500;
+    box-shadow: 3px 3px #b27a00;
+}
+
+/* SIDE-CONTAINER */
+
+.side-container{
+    height: 100vh;
+    width: 12rem;
+    position: fixed;
+    left:0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+ul {
+    list-style-type: none;
+}
+.side-container div div {
+    margin: 1.8rem 0 .3rem;
+}
+hr {
+    transition: 700ms;
+    border: none;
+    width: 1rem;
+    height:3px;
+    border-radius: 3px;
+    background-color: white;
+    margin-top: .5rem;
+}
+a {
+    transition: 700ms;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.hover:hover hr{
+    transition: 500ms;
+    padding-right: 2rem;
+    transition-timing-function: ease-in-out;
+    background-color: #F0A500;
+}
+.hover:hover a{
+    transition: 500ms;
+    color: gray;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+.active-a{
+    transition: 500ms;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.active-hr{
+    transition: 500ms;
+    padding-right: 2rem;
+    transition-timing-function: ease-in-out;
+    background-color: #F0A500;
+}
+
+/* BOTTOM CONTAINER */
+
+.bottom-container{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin-bottom: .4rem;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    display: none;
+}
+.bottom-container div div{
+    margin: 0 1.8rem;
+    display: block;
+}
+.bottom-container div div a {
+    font-size: 1rem;
+}
+.bottom-container div {
+    background-color: rgb(0, 0, 0, .7);
+    padding: .3rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 1.8rem; */
+}
+
+/* MAIN CONTAINER */
+
+.main {
+    /* padding-left: 6%; */
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+#portfolio, #aboutme, #skills, #contactme, #internships {
+    margin: auto;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 3rem;
+    padding-right: 1rem;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+.icons i {
+    margin:0 1rem;
+    transition: 500ms;
+    color: #F0A500;
+}
+.icons i:hover {
+    transition: 500ms;
+    color:#F0A500;
+    transform: scale(1.1) ;
+    text-shadow: 1px 1px white;
+}
+
+/* PORTFOLIO */
+
+#portfolio{
+    width: 45%;
+}
+#portfolio h1{
+    margin-bottom: .7rem;
+    font-size: 8rem;
+    font-weight: 400;
+}
+#portfolio div p{
+    color: #F0A500;
+}
+/* ABOUT ME */
+
+#aboutme {
+    width: 45%;
+}
+#aboutme p {
+    line-height: 1.3rem;
+    color: #F0A500;
+}
+#aboutme ul {
+    list-style-type: circle;
+}
+#aboutme li {
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+#aboutme b {
+    font-size: 23px;
+}
+
+/* SKILLS */
+
+#skills {
+    width: 45%;
+}
+#skills li,p {
+    font-size: 20px;
+}
+#skills h3 {
+    margin-bottom: .5rem;
+    font-size: 30px;
+    color: #F0A500;
+}
+
+/* INTERNSHIPS */
+
+#internships span{
+    color: #F0A500;
+}
+
+/* CONTACT ME */
+
+#contactme {
+    width: 45%;
+    font-size: 20px;
+}
+table {
+    width: 100%;
+}
+tr {
+    margin: 1rem;
+}
+td {
+    padding: .3rem;
+}
+input,textarea {
+    width: 100%;
+    padding: .3rem;
+    border: none;
+    border-radius: .4rem;
+    background-color: rgba(0, 0, 0, 0.448);
+    color: black;
+    font-size: .8rem;
+    border: 1px solid white;
+}
+.button{
+    text-align: center;
+}
+.button input{
+    margin-left: 1rem;
+    height: 2rem;
+    width: 7rem;
+}
+.submit {
+    font-family: 'Inconsolata', monospace;
+    transition: 500ms;
+    background-color: #F0A500;
+}
+.submit:hover {
+    transition: 500ms;
+    transform: scale(1.1);
+    background-color: #F0A500;
+    box-shadow: 3px 3px white;
+}
+.submit {
+    width: 4rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border:none;
+    font-family: 'Inconsolata', monospace;
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        margin: 0;
+    }
+    #portfolio, #aboutme, #skills, #contactme, #internships {
+        width: 100%;
+    }
+    #portfolio div {
+        margin: auto;
+    }
+    #aboutme div {
+        width: 70%;
+        display: inline;
+        margin: auto;
+    }
+    #skills div, #contactme div, #internships div {
+        display: inline;
+        margin: auto;
+    }
+    .side-container{
+        display: none;
+    }
+    .bottom-container {
+        display: block;
+    }
+/* }
+@media screen and (max-width:425px){ */
+    *{
+        font-size: 30px;
+    }
+    /* LOGO */
+    .logo {
+        border-radius: 10px;
+        position: absolute;
+    }
+    .logo h3{
+        font-size: 2.5rem;
+    }
+    /* PORTFOLIO */
+    #portfolio h3{
+        font-size: 2rem;
+    }
+    #portfolio p{
+        font-size: 1.5rem;
+    }
+    /* ABOUTME */
+    #aboutme div{
+        width: 80%;
+    }
+    #aboutme div ul li,#aboutme div p b{
+        font-size: 1.5rem;
+    }
+    #aboutme div p{
+        font-size: 1rem;
+    }
+    /* SKILLS */
+    #skills div ul li{
+        font-size: 1.5rem;
+    }
+    #skills div h3{
+        font-size: 2rem;
+    }
+    /* CONTACTME */
+    #contactme td {
+        font-size: 1.5rem;
+    }
+    #contactme td input{
+        border-radius: 5px;
+        width: 100%;
+        height: 1.5rem;
+    }
+    #contactme td textarea{
+        width: 100%;
+    }
+    #contactme div{
+        width: 80%;
+    }
+    #contactme .button input{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 40%;
+    }
+}
